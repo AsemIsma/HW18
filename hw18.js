@@ -7,8 +7,8 @@ const clearBtn = document.querySelector("#clearBtn");
 genBtn.addEventListener("click", function (min, max) {
     event.preventDefault();
 
-    min = lowLim.value;
-    max = upLim.value;
+    min = Number(lowLim.value);
+    max = Number(upLim.value);
 
     if(min < max) {
         let randomNum = Number(Math.floor(Math.random() * (max - min + 1))) + Number(min);
